@@ -13,10 +13,10 @@ const Hero = () => {
       <div className="relative h-[420px] rounded-md overflow-hidden shadow">
         <img src={hero2} alt="" className="absolute w-full h-full object-cover"/>
         <div className="absolute right-0 top-0 h-full w-[35%] bg-white rounded-l-full clip-path"></div>
-        <button className="absolute left-5 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow flex items-center justify-center">
+        <button className="absolute left-5 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white hover:bg-gray-200 shadow flex items-center justify-center">
           <FaChevronLeft />
         </button>
-        <button className="absolute right-5 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow flex items-center justify-center">
+        <button className="absolute right-5 top-1/2 -translate-y-2/2 w-12 h-12 rounded-full bg-white hover:bg-gray-200 shadow flex items-center justify-center">
           <FaChevronRight />
         </button>
         <div className="absolute left-16 top-16 text-white">

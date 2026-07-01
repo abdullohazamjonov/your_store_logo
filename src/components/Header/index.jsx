@@ -13,27 +13,31 @@ const Header = () => {
       <div className="bg-[#2d170f] text-white text-sm">
         <div className="max-w-7xl mx-auto h-10 flex justify-between items-center">
           <div className="flex items-center gap-8">
-            <div className="flex items-center gap-2">
-              <FaMapMarkerAlt className="text-yellow-400" />
-              <span>Ваш город: Константинополь</span>
+            <div>
+              <a href="/" className="flex items-center gap-2">
+                <FaMapMarkerAlt className="text-yellow-400" />
+                <span>Ваш город: Константинополь</span>
+              </a>
             </div>
-            <div className="flex items-center gap-2">
-              <FaMapMarkerAlt className="text-yellow-400" />
-              <span>Наш офис: Москва, ул. Новокосинская д.7</span>
+            <div>
+              <a href="/" className="flex items-center gap-2">
+                <FaMapMarkerAlt className="text-yellow-400" />
+                <span>Наш офис: Москва, ул. Новокосинская д.7</span>
+              </a>
             </div>
           </div>
           <div className="flex gap-8">
-            <a href="/">Статьи</a>
-            <a href="/">Оплата</a>
-            <a href="/">Гарантия</a>
-            <a href="/">Дилерам</a>
-            <a href="/">Вакансии</a>
+            <a href="/" className="hover:text-yellow-400">Статьи</a>
+            <a href="/" className="hover:text-yellow-400">Оплата</a>
+            <a href="/" className="hover:text-yellow-400">Гарантия</a>
+            <a href="/" className="hover:text-yellow-400">Дилерам</a>
+            <a href="/" className="hover:text-yellow-400">Вакансии</a>
           </div>
         </div>
       </div>
       <div className="bg-white">
         <div className="max-w-7xl mx-auto py-5 flex justify-between items-center">
-          <img src={logo} alt="" />
+          <a href="/"><img src={logo} alt="" /></a>
           <div className="w-[500px]">
             <div className="flex justify-between text-xs mb-3">
               <span className="flex items-center gap-1">
@@ -55,7 +59,7 @@ const Header = () => {
             </div>
             <div className="flex">
               <input type="text" placeholder="Поиск по каталогу..." className="border border-gray-300 rounded-l px-4 h-11 w-full outline-none"/>
-              <button className="bg-yellow-400 w-32 rounded-r font-semibold">
+              <button className="bg-yellow-400 hover:bg-yellow-500 w-32 rounded-r font-semibold">
                 Найти
               </button>
             </div>
@@ -77,7 +81,7 @@ const Header = () => {
               <FaEnvelope className="text-yellow-500" />
               youremail@mailbox.ru
             </div>
-            <button className="bg-orange-500 text-white px-7 h-11 rounded">
+            <button className="bg-orange-500 hover:bg-orange-700 text-white px-7 h-11 rounded">
               Заказать звонок
             </button>
           </div>
@@ -85,16 +89,16 @@ const Header = () => {
       </div>
       <div className="border-t border-b">
         <div className="max-w-7xl mx-auto flex">
-          <button className="bg-yellow-400 w-72 h-14 flex items-center justify-center gap-3 font-semibold">
+          <button className="bg-yellow-400 hover:bg-yellow-500 w-72 h-14 flex items-center justify-center gap-3 font-semibold">
             <FaBars />
             Каталог товаров
           </button>
           <div className="flex flex-1 justify-around items-center text-sm">
-            <a href="/">О компании</a>
-            <a href="/">Отзывы</a>
-            <a href="/">Наши работы</a>
-            <a href="/">Доставка</a>
-            <a href="/">Контакты</a>
+            <a href="/" className=' hover:text-yellow-400'>О компании</a>
+            <a href="/" className=' hover:text-yellow-400'>Отзывы</a>
+            <a href="/" className=' hover:text-yellow-400'>Наши работы</a>
+            <a href="/" className=' hover:text-yellow-400'>Доставка</a>
+            <a href="/" className=' hover:text-yellow-400'>Контакты</a>
           </div>
         </div>
       </div>
