@@ -37,7 +37,7 @@ const features = [
 
 const Sindebar = () => {
  return (
-    <section className="bg-white py-10 border-b">
+    <section className="bg-white py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
         {features.map((item, index) => (
           <div key={index} className="flex items-center gap-4">

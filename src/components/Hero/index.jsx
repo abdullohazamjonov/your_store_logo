@@ -16,7 +16,7 @@ const Hero = () => {
         <button className="absolute left-5 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white hover:bg-gray-200 shadow flex items-center justify-center">
           <FaChevronLeft />
         </button>
-        <button className="absolute right-5 top-1/2 -translate-y-2/2 w-12 h-12 rounded-full bg-white hover:bg-gray-200 shadow flex items-center justify-center">
+        <button className="absolute right-5 top-1/2 -translate-y-2/2 z-10 w-12 h-12 rounded-full bg-white hover:bg-gray-200 shadow flex items-center justify-center">
           <FaChevronRight />
         </button>
         <div className="absolute left-16 top-16 text-white">

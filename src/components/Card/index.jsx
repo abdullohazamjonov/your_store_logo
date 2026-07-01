@@ -57,7 +57,7 @@ const cards = [
     ],
   },
 ];
-const Cart = () => {
+const Card = () => {
   return (
     <section className="max-w-7xl mx-auto py-12">
       <h2 className="text-4xl font-bold mb-8">Категории</h2>
@@ -117,4 +117,4 @@ const Cart = () => {
   );
 }
 
-export default Cart
+export default Card
