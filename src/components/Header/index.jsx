@@ -1,0 +1,105 @@
+import React from 'react'
+import {
+  FaMapMarkerAlt,
+  FaClock,
+  FaEnvelope,
+  FaBars,
+  FaCheck,
+} from "react-icons/fa";
+import logo from "../../assets/image/logo_1.svg"
+const Header = () => {
+  return (
+    <>
+      <div className="bg-[#2d170f] text-white text-sm">
+        <div className="max-w-7xl mx-auto h-10 flex justify-between items-center">
+          <div className="flex items-center gap-8">
+            <div className="flex items-center gap-2">
+              <FaMapMarkerAlt className="text-yellow-400" />
+              <span>Ваш город: Константинополь</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <FaMapMarkerAlt className="text-yellow-400" />
+              <span>Наш офис: Москва, ул. Новокосинская д.7</span>
+            </div>
+          </div>
+          <div className="flex gap-8">
+            <a href="/">Статьи</a>
+            <a href="/">Оплата</a>
+            <a href="/">Гарантия</a>
+            <a href="/">Дилерам</a>
+            <a href="/">Вакансии</a>
+          </div>
+        </div>
+      </div>
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto py-5 flex justify-between items-center">
+          <img src={logo} alt="" />
+          <div className="w-[500px]">
+            <div className="flex justify-between text-xs mb-3">
+              <span className="flex items-center gap-1">
+                <FaCheck className="text-yellow-500" />
+                Лучшие цены
+              </span>
+              <span className="flex items-center gap-1">
+                <FaCheck className="text-yellow-500" />
+                Бесплатная доставка
+              </span>
+              <span className="flex items-center gap-1">
+                <FaCheck className="text-yellow-500" />
+                Гарантия
+              </span>
+              <span className="flex items-center gap-1">
+                <FaCheck className="text-yellow-500" />
+                Более 1000 товаров
+              </span>
+            </div>
+            <div className="flex">
+              <input type="text" placeholder="Поиск по каталогу..." className="border border-gray-300 rounded-l px-4 h-11 w-full outline-none"/>
+              <button className="bg-yellow-400 w-32 rounded-r font-semibold">
+                Найти
+              </button>
+            </div>
+          </div>
+          <div className="text-sm">
+            <div className="flex items-center gap-2 text-gray-600">
+              <FaClock className="text-yellow-500" />
+              Ежедневно с 9:00 до 21:00
+            </div>
+            <h3 className="font-bold text-xl">
+              8 (800) 800-00-00
+            </h3>
+            <h3 className="font-bold text-xl">
+              8 (495) 700-00-00
+            </h3>
+          </div>
+          <div>
+            <div className="flex items-center gap-2 text-sm mb-3">
+              <FaEnvelope className="text-yellow-500" />
+              youremail@mailbox.ru
+            </div>
+            <button className="bg-orange-500 text-white px-7 h-11 rounded">
+              Заказать звонок
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="border-t border-b">
+        <div className="max-w-7xl mx-auto flex">
+          <button className="bg-yellow-400 w-72 h-14 flex items-center justify-center gap-3 font-semibold">
+            <FaBars />
+            Каталог товаров
+          </button>
+          <div className="flex flex-1 justify-around items-center text-sm">
+            <a href="/">О компании</a>
+            <a href="/">Отзывы</a>
+            <a href="/">Наши работы</a>
+            <a href="/">Доставка</a>
+            <a href="/">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Header
