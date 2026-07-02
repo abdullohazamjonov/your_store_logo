@@ -6,7 +6,6 @@ import Card from '../../components/Card'
 import Input from '../../components/Input'
 import Test from '../../components/Test'
 import Tabs from '../../components/Tabs'
-import Products from '../../components/Products'
 
 const Home = () => {
   return (
@@ -17,7 +16,6 @@ const Home = () => {
       <Input />
       <Test />
       <Tabs />
-      <Products />
     </>
   )
 }
